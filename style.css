@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    color: gray;
+    margin-top: 20px;
+}
+.carousels {
+    height: 700px;
+    margin-bottom: 40px;
+}
+.btn:hover {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+    transition: 0.2s ease-in;
+}
+#inspire h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    color: white;
+}
+#home {
+    padding-bottom: 900px;
+}
+.img-post {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.img-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+.img-post a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 0px 10px;
+    width: 100%;
+    line-height: 42px;
+    background-color: #938755;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.posts:nth-child(odd) {
+    margin-bottom: 140px;
+}
+.posts:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.post {
+    padding: 20px 0px;
+}
+.post h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #edd161;
+    margin-bottom: 20px;
+}
+.post p {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: gray;
+}
+/* .posts:nth-child(even) .post {
+    padding: 0;
+}
+.posts:nth-child(even) .img-post {
+    float: right;
+} */
+/* **********************************CONTACT***********************************/
+#contact {
+    padding: 100px 0px;
+    background-color: #E5E4E0;
+}
+#contact .map h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 0px 22px;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 400px;
+}
+#contact .map p {
+    padding: 22px;
+    font-size: 28px;
+    text-align: justify;
+}
+.infor-contact {
+    padding: 0px 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.infor-contact h4{
+    font-size: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: red;
+    border-bottom: 3px solid red;
+    margin-bottom: 30px;
+}
+.infor-contact form {
+    max-width: 100%;
+    height: auto;
+}
+form input {
+    max-width: 100%;
+    padding: 12px;
+    padding-right: 40px;
+    margin-bottom: 18px;
+    background-color: white;
+    border:2px solid silver;
+    font-size: 24px;
+    outline: none;
+    display: block;
+}
+form input:focus {
+    border: 2px solid white;
+    transition: 0.1s ease;
+}
+.infor-contact p {
+    font-size: 26px;
+    line-height: 42px;
+}
+.infor-contact p:last-child {
+    line-height: 46px;
+    font-size: 34px;
+    font-weight: bold;
+}
+/* **********************************END_CONTACT***********************************/
+@media only screen and (max-width: 800px) {
+    .posts:nth-child(odd) {
+        margin-bottom: 0;
+    }
+  }
+@media only screen and (min-width: 1025px) {
+    .post {
+        width: 90%;
+    }
+    .img-post {
+        width: 90%;
+    }
+  }
+  

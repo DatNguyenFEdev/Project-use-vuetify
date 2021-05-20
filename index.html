@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <!-- ------link vuetify------ -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- --------link vuejs-------- -->
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+      <!-- =======carousel====== -->
+      <div id="app">
+        <section id="home">
+        <v-container-fluid>
+          <div class="carousels">
+            <v-app id="inspire">
+              <v-carousel
+                cycle
+                height="700"
+                hide-delimiter-background
+              >
+              <v-carousel-item
+                v-for="(imageSlide, i) in imagesSlider"
+                :key="i"
+                :src = "imageSlide.src"
+              >
+              <v-row
+                class="fill-height"
+                align="center"
+                justify="center"
+              >
+                <div class="display-3">
+                  <h2>Nothing Impossible</h2>
+                </div>
+              </v-row>
+              </v-carousel-item>
+              </v-carousel>
+            </v-app>
+          </div>
+        </v-container-fluid>
+      <!-- =======carousel====== -->
+        <v-container>
+          <v-row class="posts" > 
+            <v-col cols="12" md="6" sm="12">
+              <div class="img-post">
+                <img src="./images/img-posts/img-post1.jpg" alt="">
+                <a class="title">Giới thiệu</a>
+              </div>
+            </v-col >
+            <v-col cols="12" md="6" sm="12">
+              <div class="post">
+                <h3>Giới thiệu</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                  It has survived not only five centuries, but also the leap into electronic typesetting, 
+                  remaining essentially unchanged. 
+                </p>
+                <a href="#" class="btn">Xem Thêm</a>
+              </div>
+            </v-col>
+          </v-row>
+          <v-row class="posts">
+            <v-col cols="12" md="6" sm="12">
+              <div class="img-post">
+                <img src="./images/img-posts/img-post2.jpg" alt="">
+                <a class="title">Tầm Nhìn</a>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" sm="12">
+              <div class="post">
+                <h3>Tầm nhìn</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                  It has survived not only five centuries, but also the leap into electronic typesetting, 
+                  remaining essentially unchanged.
+                </p>
+                <a href="#" class="btn">Xem Thêm</a>
+              </div>
+            </v-col>
+          </v-row>
+        </v-container>
+      </section>
+      </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

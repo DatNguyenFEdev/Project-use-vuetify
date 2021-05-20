@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <!-- ------link vuetify------ -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- --------link vuejs-------- -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+<div id="app">
+    <section id="contact">
+        <v-container>
+            <v-row class="map">
+                <v-col cols="12">
+                    <h3>Hello, Nice to Meet You</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.980384364946!2d105.81945407150623!3d21.022778763281334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1621407578644!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Santa Monica, Silicon Beach, Dogtown - whatever you want to call it, we call it home. 
+                    So drop us a line, write us a letter, sing us a song or even send us a Raven. 
+                    We'd love to hear from you.</p>
+                </v-col>
+            </v-row>
+            <v-row class="infor-contact">
+                <v-col  cols="12" md="7" sm="12" class="helpyou"> 
+                    <h4>How can we help you?</h4>
+                    <form action="#">
+                        <input type="text" class="text" placeholder="Name">
+                        <input type="text" class="text" placeholder="Company">
+                        <input type="email" class="text" placeholder="Email">
+                        <input type="phone" class="text" placeholder="Phone">
+                    </form>
+                </v-col>
+                <v-col cols ="12" md="3" sm="12" >
+                    <h4>Get it touch</h4>
+                    <p>1854 Euclid Street No 202</p>
+                    <p>Sam Monica, CA 90404</p>
+                    <p>310.392.3848</p>
+                </v-col>
+            </v-row>
+        </v-container>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
